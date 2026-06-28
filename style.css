@@ -8,6 +8,8 @@ body {
     padding: 0px;
     height: 100vh;
     min-width: 400px;
+    cursor: default;
+    user-select: none;
 }
 
 main {
@@ -65,7 +67,7 @@ body ::selection {
 }
 
 .navbar li.img:hover {
-    background-color: #212121;
+    background-color: #313131;
     transition: all 0.2s ease;
 }
 
@@ -124,21 +126,22 @@ body ::selection {
 .searchArea input:hover {
     background-color: #494949;
     transition: all 0.1 ease;
+    cursor: text;
 
 }
 .searchArea input:not(:hover) {
     transition: all 0.1s ease;
     
 }
-.searchArea input:focus {
+.searchArea input:focus{
     outline: none;
     color: #e0e0e0;
+    text-decoration: none;
 }
 
 .essentials {
     display: flex;
     flex-direction: row;
- 
     column-gap: 20px;
     justify-content: center;
 }
@@ -147,18 +150,21 @@ body ::selection {
     display: flex;
     padding: 15px;
     width: auto;
-    background-color: #212121;
+    background-color: #313131;
     border-radius: 10px;
     color: #c0c0c0;
     text-decoration: none;
     font-weight: bold;
     font-size: 0.9em;
+    outline: 1px solid transparent;
     
 }
 
 .essentials a.options:hover {
-     background-color: #313131;
-     transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    outline: 2px solid #515151;
+     
+
 }
 .essentials a.options:not(:hover) {
     transition: all 0.1s ease;
